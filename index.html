@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assemblées du Bénin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- ══ HEADER ══════════════════════════════════════════════ -->
+<header id="hdr">
+  <a href="#hero" class="logo"><span>Assemblées</span> Locales</a>
+  <button class="brightness-btn" id="brightness-btn" title="Mode clair / sombre">🌙</button>
+  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  <nav id="nav">
+    <a href="#hero">Accueil</a>
+    <a href="#about">Qui sommes-nous</a>
+    <a href="#assemblies">Nos assemblées</a>
+    <a href="#activities">Activités</a>
+    <a href="#ai-sec">Assistant IA</a>
+    <a href="#join" class="nav-cta">Nous rejoindre</a>
+  </nav>
+</header>
+
+<!-- ══ HERO ════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img class="slide active" src="img/hero-1.jpg" alt="Assemblée 1" loading="eager"/>
+    <img class="slide" src="img/hero-2.jpg" alt="Assemblée 2" loading="lazy"/>
+    <img class="slide" src="img/hero-3.jpg" alt="Assemblée 3" loading="lazy"/>
+    <img class="slide" src="img/hero-4.jpg" alt="Assemblée 4" loading="lazy"/>
+  </div>
+  <div class="hero-ov"></div>
+  <div class="hero-content">
+    <div class="hero-tag"><div class="dot"></div>Bénin</div>
+    <h1>Des Assemblées <span class="g">vivantes</span><br>pour tous</h1>
+    <p>Présentes dans plusieurs départements du Bénin, nos assemblées vous accueillent pour partager la foi, la prière et la communion fraternelle.</p>
+    <div class="hero-btns">
+      <a href="#assemblies" class="btn-g">Trouver une assemblée</a>
+      <a href="#ai-sec" class="btn-o">Parler à l'IA →</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Défiler</span><div class="ln"></div></div>
+  <div class="hero-stats">
+    <div class="stat"><span class="n">19</span><div class="l">Assemblées</div></div>
+    <div class="stat"><span class="n">10+</span><div class="l">Localités</div></div>
+    <div class="stat"><span class="n">∞</span><div class="l">Foi & prière</div></div>
+    <div class="stat"><span class="n">Tous</span><div class="l">Bienvenus</div></div>
+  </div>
+</section>
+
+<!-- ══ QUI SOMMES-NOUS ═══════════════════════════════════ -->
+<section class="about" id="about">
+  <div class="about-imgs rl">
+    <div class="img-main"><img src="img/about-main.jpg" alt="Assemblée" loading="lazy"/></div>
+    <div class="img-sec"><img src="img/about-sec.jpg" alt="Communauté" loading="lazy"/></div>
+    <div class="float-badge">Foi · Prière · Communion</div>
+  </div>
+  <div class="rr">
+    <span class="eyebrow">Notre identité</span>
+    <h2 class="sec-title">Qui <span class="g">sommes-nous</span> ?</h2>
+    <p class="sec-sub">Réseau d'églises chrétiennes au Bénin, réparties dans les départements de l'Ouémé, du Littoral et de l'Atlantique. — Djeffa, Êkpè, Affotonou, Gankpodo, Agbanta, Aguégués, Dannou, Gangban, Kesounou, Dowa, Agonsagbo, Sèto-gbodjè, Pobè, Tatonnoukon, Cadjèhoun, Tankpè, Calavi, Godomey et Gbodjè. Un lieu ouvert à tous pour grandir dans la foi.</p>
+    <div class="values">
+      <div class="val"><div class="val-ic">📖</div><span>Enseignement biblique rigoureux chaque semaine</span></div>
+      <div class="val"><div class="val-ic">🤝</div><span>Entraide et soutien mutuel au quotidien</span></div>
+      <div class="val"><div class="val-ic">🎶</div><span>Louange et adoration au cœur de nos rencontres</span></div>
+      <div class="val"><div class="val-ic">👨‍👩‍👧</div><span>Activités pour les jeunes, familles et toute personne</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NOS ASSEMBLÉES ════════════════════════════════════ -->
+<section class="assemblies" id="assemblies">
+  <div class="assemblies-hd rv">
+    <span class="eyebrow">Nos lieux de culte</span>
+    <h2 class="sec-title">Nos <span class="g">Assemblées</span></h2>
+    <p class="sec-sub">Horaires, localisation et contacts WhatsApp directs pour chaque assemblée.</p>
+  </div>
+  <div class="grid" id="cards-grid"></div>
+</section>
+
+<!-- ══ ACTIVITÉS ════════════════════════════════════════ -->
+<section class="activities" id="activities">
+  <div class="acts-hd rv">
+    <span class="eyebrow">Ce que nous faisons</span>
+    <h2 class="sec-title">Nos <span class="g">Activités</span></h2>
+  </div>
+  <div class="acts-grid">
+    <div class="act rv">
+      <img src="img/act-culte.jpg" alt="Culte" loading="lazy"/>
+      <div class="act-ov"><div class="act-ic">🏛️</div><div class="act-n">Culte du Dimanche</div><div class="act-d">Adoration, prière et enseignement de la Parole chaque dimanche.</div></div>
+    </div>
+    <div class="act rv" style="transition-delay:.08s">
+      <img src="img/act-etude.jpg" alt="Étude biblique" loading="lazy"/>
+      <div class="act-ov"><div class="act-ic">📖</div><div class="act-n">Étude Biblique</div><div class="act-d">Approfondissement de la Parole en groupe, plusieurs fois par semaine.</div></div>
+    </div>
+    <div class="act rv" style="transition-delay:.16s">
+      <img src="img/jeunesse.webp" alt="Jeunesse" loading="lazy"/>
+      <div class="act-ov"><div class="act-ic">🌱</div><div class="act-n">Jeunesse</div><div class="act-d">Un espace vivant pour les jeunes : louange, partage et engagement.</div></div>
+    </div>
+    <div class="act rv" style="transition-delay:.24s">
+      <img src="img/act-familles.jpg" alt="Familles" loading="lazy"/>
+      <div class="act-ov"><div class="act-ic">❤️</div><div class="act-n">Familles</div><div class="act-d">Des rencontres pour fortifier le foyer à la lumière de l'Évangile.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ASSISTANT IA ══════════════════════════════════════ -->
+<section class="ai-sec" id="ai-sec">
+  <div class="ai-inner">
+    <div class="ai-hd rv">
+      <div class="ai-badge"><span class="ai-dot"></span>Intelligence Artificielle · 24h/7j</div>
+      <h2 class="sec-title">Votre <span class="g">Assistant</span></h2>
+      <p class="sec-sub" style="margin:0 auto .5rem;">Posez vos questions sur nos assemblées, horaires, ou comment nous rejoindre.</p>
+    </div>
+    <div class="chat-win rv">
+      <div class="chat-top">
+        <div class="ai-av">✦</div>
+        <div><div class="ai-nm">Assistant des Assemblées</div><div class="ai-st">En ligne</div></div>
+      </div>
+      <div class="chat-msgs" id="cms">
+        <div class="msg bot">Bonjour et bienvenue ! 👋 Je suis l'assistant des Assemblées du Bénin. Je peux vous renseigner sur nos assemblées, leurs horaires, leurs contacts, ou vous aider à nous rejoindre. Comment puis-je vous aider ?</div>
+      </div>
+      <div class="quick-qs">
+        <button class="qq" onclick="quickAsk('Quels sont les horaires de l\'assemblée de Calavi ?')">📍 Horaires Calavi</button>
+        <button class="qq" onclick="quickAsk('Comment rejoindre une assemblée ?')">🤝 Nous rejoindre</button>
+        <button class="qq" onclick="quickAsk('Quels sont les contacts de l\'assemblée de Godomey ?')">📞 Contacts Godomey</button>
+        <button class="qq" onclick="quickAsk('Quelles assemblées ont une réunion le vendredi ?')">📅 Réunions vendredi</button>
+      </div>
+      <div class="chat-ft">
+        <input type="text" id="ci" placeholder="Posez votre question…" onkeydown="if(event.key==='Enter')sendMsg()"/>
+        <button id="sb" onclick="sendMsg()"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NOUS REJOINDRE ════════════════════════════════════ -->
+<section class="join" id="join">
+  <div class="join-bg"></div>
+  <div class="join-ov"></div>
+  <div class="join-inner">
+    <h2>Venez <span style="background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">vivre</span> la foi avec nous</h2>
+    <p>Peu importe votre parcours — vous êtes les bienvenus. Remplissez ce formulaire et nous vous recontacterons rapidement.</p>
+    <div class="contact-form rv">
+      <div class="form-row">
+        <div class="form-group"><label>Prénom & Nom</label><input type="text" id="f-name" placeholder="Votre nom complet"/></div>
+        <div class="form-group"><label>Téléphone / WhatsApp</label><input type="tel" id="f-tel" placeholder="+229 XX XX XX XX"/></div>
+        <div class="form-group">
+          <label>Assemblée souhaitée</label>
+          <select id="f-asm">
+            <option value="">— Choisir une assemblée —</option>
+            <option>Assemblée de Djeffa</option>
+            <option>Assemblée d'Êkpè</option>
+            <option>Assemblée d'Affotonou</option>
+            <option>Assemblée de Gankpodo</option>
+            <option>Assemblée d'Agbanta</option>
+            <option>Assemblée d'Aguégués</option>
+            <option>Assemblée de Dannou</option>
+            <option>Assemblée de Gangban</option>
+            <option>Assemblée de Kesounou</option>
+            <option>Assemblée de Dowa</option>
+            <option>Assemblée d'Agonsagbo</option>
+            <option>Assemblée de Sèto-gbodjè</option>
+            <option>Assemblée de Pobè</option>
+            <option>Assemblée de Tatonnoukon</option>
+            <option>Assemblée de Cadjèhoun</option>
+            <option>Assemblée de Tankpè</option>
+            <option>Assemblée de Calavi</option>
+            <option>Assemblée de Godomey</option>
+            <option>Assemblée de Gbodjè</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Email (optionnel)</label><input type="email" id="f-email" placeholder="votreemail@exemple.com"/></div>
+        <div class="form-group full"><label>Message</label><textarea id="f-msg" placeholder="Dites-nous comment nous pouvons vous aider…"></textarea></div>
+      </div>
+      <button class="btn-g form-submit" onclick="submitForm()">Envoyer ma demande →</button>
+      <div id="form-status"></div>
+      <p class="form-note">Ou écrivez-nous directement : <a href="mailto:madocheatodjinou@gmail.com">madocheatodjinou@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════ -->
+<footer>
+  <div class="foot-brand">
+    <a href="#hero" class="foot-logo"><span>Assemblées</span> Locales</a>
+    <p>Réseau d'églises chrétiennes au Bénin. Un espace de foi, de prière et de communauté ouvert à tous.</p>
+  </div>
+  <div class="foot-col">
+    <h4>Navigation</h4>
+    <a href="#hero">Accueil</a>
+    <a href="#about">Qui sommes-nous</a>
+    <a href="#assemblies">Nos assemblées</a>
+    <a href="#activities">Activités</a>
+    <a href="#ai-sec">Assistant IA</a>
+    <a href="#join">Nous rejoindre</a>
+  </div>
+  <div class="foot-col">
+    <h4>Assemblées</h4>
+    <a href="#assemblies">Djeffa · Êkpè · Affotonou</a>
+    <a href="#assemblies">Gankpodo · Cadjèhoun</a>
+    <a href="#assemblies">Tankpè · Calavi</a>
+    <a href="#assemblies">Godomey · Gbodjè</a>
+    <a href="mailto:madocheatodjinou@gmail.com">📧 Nous écrire</a>
+  </div>
+  <div class="foot-devs">
+    <span class="foot-copy">Tous droits réservés.</span>
+    <span class="foot-credits">© 2026 Développé par <span>ATODJINOU Madoché</span> & <span>AKOWE Céphas</span></span>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
